@@ -1,69 +1,61 @@
-# 🚀 CI/CD Practice with GitHub Actions (DevOps Hands-on)
+# 🚀 CI/CD Pipeline Practice (GitHub Actions)
 
-![CI](https://img.shields.io/github/actions/workflow/status/jainilgupta02/ci-cd-2/main.yml?branch=main)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-success)
-
-This repository demonstrates a **complete CI/CD pipeline** using **GitHub Actions, YAML, and Python**.  
-It is built as part of my **DevOps & Cloud Computing course (PW Skills)** and strengthened with **industry-style best practices**.
+![CI](https://img.shields.io/github/actions/workflow/status/jainilgupta02/ci-cd-2/main.yml?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.9+-blue?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
 ---
 
-## 📌 Project Overview
+## 📌 Overview
+This project is a **hands-on CI/CD practice** built as part of the  
+**DevOps & Cloud Computing course (PW Skills)**.
 
-The goal of this project is to simulate a **real-world DevOps pipeline**:
-
-✔ Build  
-✔ Test  
-✔ Package  
-✔ Deploy (simulated)  
-✔ Upload artifacts  
-
-Every push to `main` automatically triggers the pipeline.
+It demonstrates a complete **CI/CD pipeline using GitHub Actions**, including:
+- automated testing
+- build artifact creation
+- deployment simulation
 
 ---
 
-## 📂 Project Structure
-```text
-ci-cd-2/
-│
-├── app/
-│ └── calculator.py # Application logic
-│
-├── test/
-│ └── test_calculator.py # Pytest unit tests
-│
-├── .github/
-│ └── workflows/
-│ └── main.yml # CI/CD pipeline
-│
-├── requirements.txt
-├── README.md
-├── LICENSE
-└── .gitignore
-```
+## ⚙️ Pipeline Flow
+Push → Build & Test → Artifact → Deploy
 
 ---
 
-## 🧮 Calculator Features
-
-The application is a **full basic calculator**:
-
-| Operation | Function |
-|------------|----------|
-| Addition | `add(a, b)` |
-| Subtraction | `subtract(a, b)` |
-| Multiplication | `multiply(a, b)` |
-| Division | `divide(a, b)` |
+## 🧮 Application
+A simple Python calculator supporting:
+- add
+- subtract
+- multiply
+- divide (with error handling)
 
 ---
 
-## 🧪 Unit Testing (pytest)
+## 🧪 Testing
+- Unit tests written using `pytest`
+- Tests run automatically in CI pipeline
 
-Tests are written using `pytest` and run automatically in CI.
+---
 
-Run locally:
-```bash
-pip install -r requirements.txt
-pytest
+## 🛠 Tech Stack
+- Python
+- GitHub Actions
+- YAML
+- Pytest
+- Linux (Ubuntu runner)
+
+---
+
+## 📦 Artifact
+Build artifact is created and uploaded on every successful run  
+(available in GitHub Actions → Artifacts).
+
+---
+
+## 👨‍💻 Author
+**Jay Gupta**  
+DevOps & Cloud Learner (PW Skills)
+
+---
+
+⭐ Star this repo if you find it helpful
