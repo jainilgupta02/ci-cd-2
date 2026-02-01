@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: python-app-build
-        path: python-app-b
+        path: python-app-build.zip
