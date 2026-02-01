@@ -36,3 +36,16 @@ jobs:
       with:
         name: python-app-build
         path: python-app-build.zip
+    
+  deploy:
+    needs: build-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: python-app-build
+      - name: Simulate Deployment
+        run: |
+          unzip python-app-build.zip
+          ls -R
